@@ -17,3 +17,5 @@ Tras entrenar una arquitectura de Red Neuronal Convolucional (CNN) propia para c
 <img width="1567" height="290" alt="image" src="https://github.com/user-attachments/assets/21b99f85-e80f-4e4b-80a7-51e697739dbd" />
 <img width="1712" height="618" alt="image" src="https://github.com/user-attachments/assets/4fd4756f-536c-42e5-b57c-e1ecf1070d2a" />
 
+
+En conclusion se decidio que el modelo no era apto porque un accuracy tan bajo no sirve para predecir.
