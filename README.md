@@ -18,4 +18,6 @@ Tras entrenar una arquitectura de Red Neuronal Convolucional (CNN) propia para c
 <img width="1712" height="618" alt="image" src="https://github.com/user-attachments/assets/4fd4756f-536c-42e5-b57c-e1ecf1070d2a" />
 
 
-En conclusion se decidio que el modelo no era apto porque un accuracy tan bajo no sirve para predecir.
+El desarrollo de una CNN desde cero para este volumen de clases no es eficiente. Este modelo **no es apto para predicción** debido a su baja precisión. 
+
+**Próximo paso:** Implementar **Transfer Learning** utilizando arquitecturas pre-entrenadas como *ResNet50* o *InceptionV3*, las cuales ya poseen filtros avanzados para la detección de rasgos animales complejos.
