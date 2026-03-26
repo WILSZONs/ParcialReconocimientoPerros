@@ -1,1 +1,15 @@
-Aquí tienes una conclusión estructurada en Markdown, directa y con el tono técnico adecuado para un reporte de resultados:📉 Conclusión: Inviabilidad del Modelo CNN "desde cero"El entrenamiento de una red neuronal convolucional (CNN) pura para clasificar 120 razas de perros ha demostrado ser insuficiente para las exigencias del problema. A continuación, se detallan los puntos clave del análisis:1. Complejidad del Dataset vs. Capacidad del ModeloIntentar clasificar 120 categorías distintas (clasificación de grano fino) con una arquitectura básica es una tarea de extrema complejidad. El modelo no logró extraer características lo suficientemente distintivas para diferenciar razas con rasgos físicos similares, resultando en un espacio de búsqueda demasiado amplio para una CNN simple.2. Análisis de Métricas (Accuracy y Loss)Precisión Insuficiente: Aunque el modelo supera el azar ($1/120 \approx 0.83\%$), un accuracy de validación estancado en apenas 6.43% indica que el modelo no está aprendiendo patrones útiles.Sobreajuste (Overfitting): Se observa una clara divergencia en las gráficas; mientras la pérdida de entrenamiento disminuye, la de validación se vuelve errática y comienza a subir, confirmando que el modelo solo memorizó ruidos del set de entrenamiento.3. Veredicto TécnicoNo se pudo montar un modelo funcional: La arquitectura actual no converge hacia una solución aceptable.Inviabilidad operativa: Debido al bajísimo desempeño, este modelo no tiene utilidad práctica en un entorno real.
+## 📉 Conclusiones del Experimento: CNN "Since Zero"
+
+Tras entrenar una arquitectura de Red Neuronal Convolucional (CNN) propia para clasificar **120 razas de perros**, se determinó que el enfoque es **inviable** bajo las condiciones actuales.
+
+### 📊 Resumen de Métricas Finales
+| Métrica | Entrenamiento | Validación | Azar (Base) |
+| :--- | :---: | :---: | :---: |
+| **Accuracy** | 11.09% | **6.43%** | 0.83% |
+| **Loss** | 3.87 | 4.24 | - |
+
+### ⚠️ Análisis de Limitaciones
+
+1.  **Complejidad del Dataset (120 clases):** El modelo se enfrentó a un problema de clasificación de grano fino (*fine-grained classification*). Diferenciar entre 120 categorías requiere una profundidad y una extracción de características que una CNN pura y simple no logra alcanzar, resultando en una incapacidad para converger.
+2.  **Rendimiento Insuficiente:** Aunque el modelo rinde ligeramente mejor que una elección aleatoria (~6% vs 0.83%), el **accuracy es extremadamente bajo** para cualquier uso práctico. No fue posible "montar" un modelo que realmente aprendiera a distinguir las razas.
+3.  **Sobreajuste y Divergencia:** Las gráficas muestran que, mientras la pérdida en entrenamiento bajaba, la de validación se estancaba o subía. Esto indica que el modelo memor
